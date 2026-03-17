@@ -1,0 +1,104 @@
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github
+$ pwd
+/c/Users/butat/Onedrive/Desktop/kadai_github
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github
+$ mkdir git_challenge
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github
+$ touch hello_world.txt
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github
+$ mv hello_world.txt /git_challenge
+mv: cannot move 'hello_world.txt' to '/git_challenge': Permission denied
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github
+$ cd git_challenge
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github/git_challenge
+$ mv hello_world.txt /git_challenge
+mv: cannot stat 'hello_world.txt': No such file or directory
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github/git_challenge
+$ cd ..
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github
+$ mv hello_world.txt git_challenge
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github
+$ cd git_challenge
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github/git_challenge
+$ ls -1
+hello_world.txt
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github/git_challenge
+$ echo Hello, world! >> hello_world.txt
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github/git_challenge
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github/git_challenge
+$ git add hello_world.txt
+fatal: not a git repository (or any of the parent directories): .git
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github/git_challenge
+$ git init
+Initialized empty Git repository in C:/Users/butat/OneDrive/Desktop/kadai_github/git_challenge/.git/
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github/git_challenge (main)
+$ git add .
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github/git_challenge (main)
+$ git commit -m "1回目のコミット"
+[main (root-commit) 39beb89] 1回目のコミット
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github/git_challenge (main)
+$ echo こんにちは、世界！ >> hello_world.txt
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github/git_challenge (main)
+$ git commit -m "２回目のコミット"
+[main bdfc537] ２回目のコミット
+ 1 file changed, 1 insertion(+)
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github/git_challenge (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github/git_challenge (main)
+$ git log
+commit bdfc537411077a11dced1d68e134d2e6f49dde6e (HEAD -> main)
+Author: ashigaru-butatonkotu <butatonkotu@yahoo.co.jp>
+Date:   Wed Mar 18 00:20:03 2026 +0900
+
+    ２回目のコミット
+
+commit 39beb89f67200af68a0f42de3f8ec4a00cac5f08
+Author: ashigaru-butatonkotu <butatonkotu@yahoo.co.jp>
+Date:   Wed Mar 18 00:18:27 2026 +0900
+
+    1回目のコミット
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github/git_challenge (main)
+$ cd ..
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github
+$ mkdir kadai_005
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github
+$ cd kadai_005
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github/kadai_005
+$ touch kadai_005.txt
+
+butat@DESKTOP-VUPIJIP MINGW64 ~/Onedrive/Desktop/kadai_github/kadai_005
+$
